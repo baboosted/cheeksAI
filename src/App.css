@@ -1,27 +1,141 @@
-.landing-page {
-  text-align: center;
-  padding: 50px;
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
-.landing-page h1 {
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #00796b;
+  color: white;
+  flex-shrink: 0;
+  border-bottom: 2px solid #004d40;
+}
+
+.header h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.landing-page p {
+.header p {
   font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-.landing-page button {
+.cta-button {
   padding: 15px 30px;
-  font-size: 1rem;
+  background-color: #004d40;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
-  background-color: #007BFF;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00332a;
+}
+
+/* Chatbox Section */
+.chatbox-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-grow: 1;
+  min-height: 100%;
+}
+
+.chatbox {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chat-window {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.message {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.user {
+  background-color: #e0f7fa;
+  align-self: flex-end;
+}
+
+.assistant {
+  background-color: #fff3e0;
+  align-self: flex-start;
+}
+
+.loading-indicator {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-field {
+  width: 80%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #00796b;
+}
+
+.send-button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  background-color: #00796b;
   color: white;
   border: none;
-  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.landing-page button:hover {
-  background-color: #0056b3;
+.send-button:hover {
+  background-color: #004d40;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00796b;
+  color: white;
 }
